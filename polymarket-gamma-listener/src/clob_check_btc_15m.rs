@@ -6,7 +6,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 const CLOB_WSS_URL: &str = "wss://ws-subscriptions-clob.polymarket.com/ws/market";
 
 /// Monitor CLOB WebSocket for the next 15-minute BTC market
-pub async fn monitor_next_market_websocket() -> Result<(), Box<dyn std::error::Error>> {
+pub async fn monitor_next_market_websocket() -> Result<(), Box<dyn std::error::Error >> {
     println!("🚀 CLOB WebSocket Monitor Started\n");
     
     // Calculate the next market slug we're looking for
